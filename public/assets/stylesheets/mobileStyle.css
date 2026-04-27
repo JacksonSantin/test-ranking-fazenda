@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+  main {
+    overflow: hidden;
+  }
+
+  #header .heading {
+    position: unset;
+  }
+
+  #header .heading img {
+    width: 7rem;
+    left: 2rem;
+  }
+
+  #header .bg-head {
+    transform: skewX(1deg);
+    clip-path: polygon(13% 0%, 100% 0%, 100% 100%, 5% 100%);
+    z-index: -1;
+  }
+
+  #content td .tooltipContent {
+    visibility: hidden;
+    width: 170px;
+    background-color: var(--white-color);
+    color: var(--white-color);
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #content td .tooltipContent::after {
+    display: none;
+  }
+}

@@ -1,0 +1,181 @@
+section {
+  width: 100%;
+}
+
+#header .heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+#header .heading img {
+  width: 10rem;
+  position: absolute;
+  right: 11rem;
+}
+
+#header .bg-head {
+  background-color: var(--white-color);
+  padding: 0.5rem 2rem .5rem 6.5rem;
+  position: static;
+  margin-bottom: .5rem;
+}
+
+#header .bg-head p {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -3px;
+  color: var(--black-color);
+  margin-left: 1rem;
+}
+
+/* Content */
+
+#content {
+  background-color: var(--white-color);
+  margin-top: 1rem;
+}
+
+table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#content tr:nth-child(even) {
+  background-color: var(--table-striped);
+}
+
+#content td {
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+  transition: .5s;
+}
+
+#content .image-bullet {
+  margin-right: .8rem;
+  position: relative;
+}
+
+#content img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid var(--border-color);
+  object-fit: cover;
+}
+
+section#content .bullet {
+  border: 1px solid var(--info-color);
+  border-radius: 50%;
+  padding: 0rem 0.3rem;
+  font-size: 10px;
+  font-weight: 800;
+  color: var(--info-color);
+  background-color: var(--white-color);
+  position: absolute;
+  top: 70%;
+  right: 0;
+}
+
+#content .info .participant-name {
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+#content .info .participant-desc {
+  font-size: 12px;
+  color: var(--info-color);
+}
+
+#content td:hover {
+  background-color: var(--selected-color);
+}
+
+#content td:hover img {
+  border-color: var(--white-color);
+}
+
+#content td:hover .info .participant-name {
+  color: var(--white-color);
+}
+
+#content td:hover .info .participant-desc {
+  color: var(--black-color);
+}
+
+/* Info Porcentagem */
+
+td {
+  position: relative;
+}
+
+#content td:hover .tooltipContent {
+  visibility: visible;
+}
+
+#content td .tooltipContent {
+  visibility: hidden;
+  width: 170px;
+  background-color: var(--white-color);
+  color: var(--white-color);
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 8px;
+  left: 104%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#content td .tooltipContent::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent var(--white-color) transparent transparent;
+}
+
+.like .content {
+  border-right: 1px solid #8c8b8b;
+}
+
+.like .content,
+.dislike .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.header_tooltip_like {
+  background-color: var(--text-color);
+  padding: 0.2rem 1rem;
+  font-size: 10px;
+  font-weight: bold;
+  border-top-left-radius: 5px;
+}
+
+.content .percent_tooltip_like,
+.content .percent_tooltip_dislike {
+  color: var(--info-color);
+  font-weight: bold;
+  font-size: 24px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .header_tooltip_dislike {
+  background-color: var(--text-color);
+  padding: 0.2rem 1rem;
+  font-size: 10px;
+  font-weight: bold;
+  border-top-right-radius: 5px;
+}

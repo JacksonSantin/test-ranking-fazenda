@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  background-color: var(--background-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+:root {
+  --background-color: #272727;
+  --white-color: #FFFFFF;
+  --black-color: #272727;
+  --selected-color: #BA3638;
+  --text-color: #BA3638;
+  --border-color: #BA3638;
+  --info-color: #909090;
+  --table-striped: #f2f1f1;
+}
